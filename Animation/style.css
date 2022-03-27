@@ -1,0 +1,95 @@
+/* common css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-transform: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+img{
+    vertical-align: middle;
+}
+/* common css end */
+/* animation css start */
+body{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    height: 100vh;
+    overflow: hidden;
+}
+.main{
+    width: 700px;
+    height: 500px;
+    background: linear-gradient(to right top, #760b4d, #ac273f, #ca5b22, #ca9500, #a9d016);
+    position: relative;
+}
+.one{
+    width: 700px;
+    height: 100px;
+    background-color: rgba(191, 176, 207, 0.281);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.two{
+    width: 100px;
+    height: 500px;
+    background-color: rgba(165, 111, 111, 0.544);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.one img{
+    width: 170px;
+    position: relative;
+    animation: car 6s infinite;
+}
+.two img{
+    width: 100px;
+    position: relative;
+    animation: car2 6s infinite;
+}
+@keyframes car{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: 110px;
+    }
+    50%{
+        top: 0;
+        left: 110px;
+    }
+    75%{
+        top: 0;
+        left: 535px;
+    }
+    
+    100%{ 
+        top: 0;
+        left: 535px;
+    } 
+}
+@keyframes car2{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    
+    100%{ 
+        top: 440px;
+        left: 0;
+    } 
+}
+/* animation css end */
